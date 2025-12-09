@@ -1,3 +1,4 @@
+import Demo2 from './Demo2';
 const { View, Text } = require('react-native');
 
 const Demo1 = props => {
@@ -5,6 +6,7 @@ const Demo1 = props => {
     <View>
       <Text>{props.firstName}</Text>
       <Text>{props.secondName}</Text>
+      <Demo2 inDemo="demo me"/>
     </View>
   );
 };
