@@ -5,20 +5,17 @@
  * @format
  */
 import Student from "./Student"
-import { Text, View,StyleSheet } from 'react-native';
+import { Text, View,StyleSheet,TextInput } from 'react-native';
 import React, { useState } from 'react';
 
 const App = () => {
   
- const [data,setData]=useState("This is UI page")
 
- const demo=()=>{
-  setData("you have clicked button")
- }
   return (
     <View style={styles.wrapper}>
       <Text> welcome to React Native</Text>
       <Text style={styles.heading}>This is <Text style={{color:'red', fontWeight:'bold'}}>Agaj Alam</Text> here</Text>
+      <TextInput style={styles.input}  placeholder="Email"/>
     </View>
   );
 };
@@ -34,6 +31,12 @@ const styles=StyleSheet.create({
     fontSize:20,
     color:'white'
 
+  },
+  input:{
+    width:'80%',
+    backgroundColor:'white',
+    borderRadius:20,
+    padding:10
   }
 })
 export default App;
